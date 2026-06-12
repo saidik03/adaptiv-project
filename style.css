@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 300vh;
+}
+
+
+#ImgIc {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: roll 0.1s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-part {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-part span {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.hl {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.hl a {
+    color: black;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
+ .language-part {
+display: flex;
+ gap: 10px;
+}
+
+/* HEADER PART END */
+
+/* HERO SECTION START */
+
+.social-btns {
+    background-color: navy;
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+.social-part p {
+    font-size: 30px
+}
+
+.social-border {
+    border: 2px solid white;
+     border-radius: 50%;
+     padding: 10px;
+    transition: 0.3s ease;
+
+}
+
+
+.social-border:hover{
+  border-radius: 15px;
+     padding: 10px;
+  transition: 0.3s ease;
+  background-color: blue;
+}
+
+.family {
+    width: 400px;
+    height: 400px;
+    background: red;
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+
+.child {
+    width: 150px;
+    height: 150px;
+    background: green;
+    position: absolute;
+    right: 0;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-btns a {
+text-decoration: none;
+color: white;
+background-color: navy;
+width: 400px;
+height: 70px;
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.7rem;
+font-family: 'Raleway';
+font-weight: bold;
+
+}
+
+.hero {
+    background-image: url(content/banner.jpg);
+    background-size: cover;
+    min-height: 100vh;
+
+    padding-top: 300px;
+    padding-left: 152px;
+}
+
+.hero-h1 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+font-size: 65px;
+margin-bottom: 50px;
+
+
+}
+
+
+
+.social-part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 100px;
+    flex-direction: column;
+    margin-right: 100px;
+    
+}
+.social-part p {
+    margin-right: 85px;
+    color: white;
+}
+
+/* HERO SECTION END */
+
+/* ABOUT PART START */
+
+
+.about-pic img {
+    width: 700px;
+    height: 600px;
+}
+.about-pic p {
+font-size: 25px;
+}
+.about-part h1 {
+    display: flex;
+    justify-content: center;
+}
+.about-pic {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.about-part {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* ABOUT PART END */
+
+/* CHOOSE PART START */
+
+.card-line {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.choose-card {
+    border: 2px solid navy;
+    width: 30%;
+    min-width: 250px;
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.choose-card img {
+    width: 50px;
+    height: 50px;
+    
+}
+.choose-part h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.choose-card p {
+    font-size: 20px;
+}
+
+/* CHOOSE PART END */
+
+/* COURSES PART START */
+
+.courses-card {
+    width: clamp(250px, 31%, 500px);
+    height: 350px;
+}
+
+.c1 {
+    background-image: url(content/c1.jpg);
+}
+.c2 {
+    background-image: url(content/c2.jpg);
+}
+.c3 {
+    background-image: url(content/c3);
+}
+.c4 {
+    background-image: url(content/c4);
+}
+.c5 {
+    background-image: url(content/c5);
+}
+.c6 {
+    background-image: url(content/c6);
+}
+.courses-line {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.courses-card {
+    border-radius: 30px;
+}
+.courses-card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+.courses-part h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    color: navy;
+}
+
+
+.courses-part a {
+    background-color: navy;
+    color: white;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 15px;
+}
+
+.c-btn {
+    display: flex;
+    justify-content: center;
+}
+     /* COURSES PART END */
+    /* TEAM PART START */
+.h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    color: navy;
+    font-size: 40px;
+    font-weight: bold;
+}
+ 
+.p {
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.team-card img{
+    width: 289px;
+    height: 514px;
+    
+}
+
+.team-card {
+    display: flex;
+    max-width: 1510px;
+    gap: 30px;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid navy;
+    padding: 20px;
+    border-radius: 16px;
+}
+.information {
+    font-size: 25px;
+}
+
+.P-2 {
+    background-color: navy;
+    width: fit-content;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: white;
+}
+
+/* TEAM PART END */
+
+/* RESULTS PART START */
+
+/* .results-part h1 {
+    width: fit-content;
+    color: navy;
+    position: relative;
+}
+
+.results-part h1::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+
+
+
+.results-part h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: navy;
+    font-weight: 900;
+    font-size: 40px;
+}
+.results-left img {
+    height: 550px;
+    width: 350px;
+}
+.results-left {
+    display: flex;
+    gap: 30px;
+}
+.results-left p {
+    font-size: 40px;
+    color: white;
+}
+.results-left span {
+    font-weight: 900;
+}
+.results-card {
+    background-color: navy;
+    border-radius: 40px;
+}
+
+.results-right span {
+    font-weight: 800;
+}
+.results-card {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+.results-right {
+    color: white;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+ /* RESULTS PART END */
+
+ /* LOCATION PART START */
+.location-part h1 {
+    display: flex;
+    justify-content: center;
+    color: navy;
+}
+.location-1 {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    gap: 30px;
+    font-size: 25px;
+    border-left: black 2px solid;
+    border-radius: 500px;
+    padding: 10px;
+}
+.p-p {
+    font-weight: 800;
+    font-size: 40px;
+    color: navy;
+}
+/* RESULTS PART END  */
+/* FOOTER PART START */
+.footer-1 img {
+    width: 200px;
+    height: 70px;
+}
+footer {
+    display: flex;
+    background-color: navy;
+    padding: 100px;
+    justify-content: center;
+}
+footer p {
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+}
+
+
+/* @media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        gap: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+} */
+
+
+
+@media (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        gap: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about-pic {
+        flex-direction: column;
+    }
+
+    .about-part {
+        padding: 20px;
+    }
+
+    .card-line {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-line  {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .results-card {
+        flex-direction: column;
+    }
+
+    .results-left {
+        flex-direction: column;
+    }
+
+    .location-1 {
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    footer { 
+        flex-direction: column;
+    }
+}
+
+    
